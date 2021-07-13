@@ -1,0 +1,13 @@
+﻿@model HomeMainViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class='container-product'>
+    @{
+        foreach(var product in Model.Products)
+        {
+            @Html.Partial("_ProductContainer", product)
+        }
+    }
+</div>

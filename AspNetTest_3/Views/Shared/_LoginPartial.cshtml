@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+    </li>
+    <li class="nav-item">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <div class="invise" id="popup-registration">
+		<form>
+			<div class='insert'>	
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Email адрес</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					<div id="emailHelp" class="form-text">Мы никогда не будем делиться вашей электронной почтой ни с кем другим.</div>
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Пароль</label>
+					<input type="password" class="form-control" id="exampleInputPassword1">
+				</div>
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Сохранить данные</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Войти</button>
+			</div>	
+			
+			<div class='insert'>
+				<button type="submit" class="btn btn-primary green-Ponch" ><img class='ponch2' src='~/img/Ponch2.png'></button>
+			</div>
+		</form>
+	</div>
+}

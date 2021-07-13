@@ -1,0 +1,39 @@
+﻿@model Product
+
+<div class="product-box-main" id="product-box-@Model.id">
+    <div class='product-box' id='product-main-@Model.id'>
+        <h5 class='name-donut'>
+            <em> <strong> @Model.Name </strong> </em>
+        </h5>
+        <div class='img-picture'>
+            <img class='picture' src='~/img/@Model.Picture' />
+        </div>
+        <div class='description'>
+            <em> @Model.ShortDescription </em>
+            <br>
+            <div class="product-price">
+                @Model.Price
+            </div>
+            <button class="button-link button-show-more" id="button-show-more-@Model.id">
+                <em>Подробнее</em>
+            </button>
+        </div>
+    </div>
+    <div class="product-box invise" id="product-info-@Model.id">
+        <h5 class='name-donut'>
+            <em> <strong> @Model.Name </strong> </em>
+        </h5>
+        <div>
+            @Model.LongDescription
+        </div>
+        <ul>
+            <li>Белки - @Model.Proteins</li>
+            <li>Жиры - @Model.Fats</li>
+            <li>Углеводы - @Model.Carbohydrates</li>
+            <li>Энерг. ценность - @Model.EnergyValue</li>
+        </ul>
+        <button class="button-link button-unshow-more" id="button-unshow-more-@Model.id">
+                <em>Назад</em>
+            </button>
+    </div>
+</div>

@@ -1,0 +1,130 @@
+.msg{
+	position: absolute;
+	top: 5%;
+	left: 15%;
+	width: 70%;
+}
+.flex-item{
+	
+	height: 100%;
+	padding: 10%;
+}
+.flex-item-1{
+	width: 70%;
+}
+.flex-item-2{
+	width: 30%;
+}
+header {
+	background-color: #deffe5;
+	text-align: center;
+	font-size: 24px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.circle {
+	background-color: white;
+	font-weight: bold;
+	color: #7e2fba;
+	font-size: 30px;
+	margin: 2px;
+	font-family: Bold Script;
+}
+
+.container-product{
+	width: 100%;
+	background-color: #ffc58f;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.product-box{
+	border-radius: 50px;
+	border-width: 2px;
+	border-color: #d60d6e;
+	height: 425px;
+	width: 245px;
+	background-color: #dcfcf3;
+	padding: 15px;
+	margin: 15px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.img-picture{
+	text-align: center;
+}
+
+.picture{
+	width: 190px;
+	
+}
+
+.name-donut{
+	text-align: center;
+	font-family: sans-serif;
+	color: #e86bbe;
+}
+
+.description{
+	text-align: center;
+	font-family: "Apple Color Emoji";
+	padding: 5px;
+	color: #1a09d9;
+	font-size: 17px;
+}
+.invisible {
+	display: none;
+}
+#popup-registration {
+	height: 297px;
+	width: 1100px;
+	background-color: #4ad468;
+	position: absolute;
+	top: 0px;
+	right: 66px;
+	padding: 5px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+form {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.ponch2 {
+	width: 300px;
+}
+
+.green-Ponch:hover, .green-Ponch, .green-Ponch:active {
+	background-color: #4ad468;
+	border-color: #4ad468;
+}
+
+
+.invise {
+	display: none;
+}
+
+.login {
+	padding-left: 10px;
+}
+
+.form-control {
+	width: 580px;
+}
+
+.button-link {
+	display: inline;
+	border-width: 0px;
+	background-color: inherit;
+	color: blue;
+}
+.product-price {
+	font-size: 20px;
+	color: #e8900c;
+}
